@@ -1,0 +1,31 @@
+// src/data/products.js
+import img1 from "../assets/watch.jpg";
+import img2 from "../assets/bg.png";
+
+
+export const productsData = [
+  {
+    title: "212 MEN NYC",
+    image: img1,
+    oldPrice: 7000,
+    newPrice: 3850,
+  },
+  {
+    title: "212 VIP (Carolina herrera)",
+    image: img2,
+    oldPrice: 7000,
+    newPrice: 3850,
+  },
+  {
+    title: "2Pc Coat Set",
+    image: "/products/2pc-coat.jpg",
+    oldPrice: 8000,
+    newPrice: 5250,
+  },
+  {
+    title: "3 PC Blazer Set",
+    image: "/products/blazer.jpg",
+    oldPrice: 12000,
+    newPrice: 5999,
+  },
+];

@@ -1,0 +1,155 @@
+.cart-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.cart-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-product-info {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: center;
+}
+
+.product-image {
+  width: 120px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.product-price {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.product-color {
+  font-size: 14px;
+  color: #555;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 30%;
+  justify-content: center;
+}
+
+.qty-btn {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.qty-value {
+  font-size: 16px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-total {
+  flex: 1 1 20%;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cart-footer {
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.checkout-note {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.checkout-btn {
+  background-color: #111;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.continue-shopping {
+  display: inline-block;
+  margin-top: 20px;
+  color: #000;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-total {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .cart-quantity {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  .checkout-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+.qty-btn:disabled,
+.delete-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

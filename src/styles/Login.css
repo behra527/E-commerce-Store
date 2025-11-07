@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.input-icon-start {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #6c757d;
+  z-index: 1;
+}
+
+.input-icon-end {
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%) !important;
+  color: #6c757d !important;
+  z-index: 2;
+}
+
+/* Ensure text fields have padding-left to avoid overlap with icons */
+.MuiTextField-root input {
+  padding-left: 40px !important;
+}
+.brand__name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #d7a86e, #b97a57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Divider (— OR —) */
+.text-muted.mb-3 {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.text-muted.mb-3::before,
+.text-muted.mb-3::after {
+  content: "";
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+/* Social login buttons */
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* Forgot password link */
+a.text-primary.small {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+a.text-primary.small:hover {
+  text-decoration: underline;
+}
+
+/* Register link */
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+a.text-primary {
+  text-decoration: none;
+}
+
+a.text-primary:hover {
+  text-decoration: underline;
+}
+.or-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+
+.or-separator::before,
+.or-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #dee2e6;
+  margin: 0 12px;
+}

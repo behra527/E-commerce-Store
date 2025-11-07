@@ -1,0 +1,77 @@
+/* Order.css */
+
+/* Basic styling and fade-in animation */
+.order-page {
+  animation: fadeIn 1s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Styling for the responsive table */
+.order-table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.order-table th,
+.order-table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.order-table th {
+  background: linear-gradient(135deg, #dcdcdc, #f0f0f0);
+  color: #333;
+  font-weight: 600;
+}
+
+.order-table td {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Product details styling */
+.product-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+/* Button hover effects */
+.btn-outline-danger:hover, .btn-outline-primary:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .order-table th,
+  .order-table td {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+  
+  .product-img {
+    width: 45px;
+    height: 45px;
+  }
+}

@@ -1,0 +1,19 @@
+/* Orders.css */
+.order-container {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.order-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.order-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}

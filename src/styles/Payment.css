@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.payment-page-container {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+.payment-heading {
+  font-weight: 700;
+  color: #111;
+  font-size: 32px;
+}
+
+.order-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-input {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  min-height: 40px;
+}
+
+.shipping-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid #343a40;
+  font-size: 14px;
+  color: #333;
+}
+
+.shipping-box p {
+  margin-bottom: 6px;
+}
+
+.pay-btn {
+  background-color: #111;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #333;
+}
+.modal-content {
+  background-color: transparent;
+  /* border-radius: 20px; */
+  animation: slideUpFade 0.6s ease;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.order-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.receipt-container {
+  border-radius: 12px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
+  overflow: hidden;
+  max-width: 500px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.tick-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #ffffff;
+}

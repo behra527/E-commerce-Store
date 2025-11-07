@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.info-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+.info-wrapper {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 1s ease-in-out;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.bg__image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.bg-image-styled {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.bg-image-styled:hover {
+  transform: scale(1.02);
+}
+
+.info-content {
+  max-width: 500px;
+  padding: 2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.info-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: titleFade 1s ease-out forwards;
+}
+
+.info-description {
+  font-size: 1.125rem;
+  color: #444;
+  line-height: 1.75;
+  margin-bottom: 1.1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFade 1s ease-out forwards;
+}
+
+/* Animation Delays */
+.info-description:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+.info-description:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.info-description:nth-of-type(4) {
+  animation-delay: 0.9s;
+}
+
+/* Keyframe Animations */
+@keyframes slideFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes titleFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .info-wrapper {
+    flex-direction: column;
+  }
+
+  .info-title {
+    font-size: 2rem;
+  }
+
+  .info-description {
+    font-size: 1rem;
+  }
+
+  .bg__image {
+    padding: 1rem 0;
+  }
+
+  .bg-image-styled {
+    max-height: 300px;
+    border-radius: 12px;
+  }
+
+  .info-content {
+    padding: 1.5rem;
+  }
+}

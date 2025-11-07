@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Universal font for item detail */
+.item__name,
+.item__price,
+.item__description,
+.item__quantity,
+.item__color,
+.item__color__header {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Name */
+.item__name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Price */
+.item__price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Description Label */
+.item__description {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Quantity Label */
+.item__quantity {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Colors */
+.item__color__header {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+}
+
+/* Gallery Thumbnails */
+.gallery-thumb {
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.05);
+  border: 2px solid #111;
+}
+
+.selected-thumb {
+  border: 2px solid #000;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Enhancements */
+.btn-lg {
+  font-size: 16px;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.btn-dark:hover {
+  background-color: #000;
+}
+
+/* Modal Image */
+.modal-content img {
+  border-radius: 12px;
+}
+
+/* General Fixes */
+button:focus,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* Vertical button group */
+.item__btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+/* Uniform button style */
+.item__btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effects */
+.btn-outline-dark.item__btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.btn-dark.item__btn:hover {
+  background-color: #111;
+}

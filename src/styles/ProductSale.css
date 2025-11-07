@@ -1,0 +1,51 @@
+.product-image-container:hover .zoom-icon-wrapper {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.zoom-icon-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.zoom-icon {
+  color: white;
+  font-size: 24px;
+}
+
+.zoomed-image {
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.color-btn {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
+
+.color-btn.active {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+}
+
+.color-btn:disabled {
+  text-decoration: line-through;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-box {
+  width: 150px;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
